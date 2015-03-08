@@ -149,5 +149,13 @@
   </div>    
   </div>
 
+  <div class=''>
+    <h3><%= _("Merge Articles") %></h3>
+    <%= form_tag("/admin/content/merge/", method: "get") do %>
+      <%= label_tag(:q, "Article ID") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Merge") %>
+    <% end %>
+  </div>
 </div>
 
